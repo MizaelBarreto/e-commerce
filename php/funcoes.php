@@ -5,11 +5,11 @@ error_reporting(E_ALL);
 
 function conectarAoBanco()
 {
-  $host = "pgsql.projetoscti.com.br";
+  $host = "127.0.0.1";
   $port = "5432";
-  $dbname = "projetoscti27";
-  $user = "projetoscti27";
-  $password = "721643";
+  $dbname = "postgres";
+  $user = "postgres";
+  $password = "postgres";
 
   try {
     $conn = new PDO("pgsql:host=$host;port=$port;dbname=$dbname;user=$user;password=$password");

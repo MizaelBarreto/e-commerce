@@ -99,7 +99,7 @@
         </div>
         <div class="sobreD sobreD2">
           <p class="sob"><strong>Nome: </strong>Mizael Martins Barreto</p>
-          <p class="sob"><strong>Função: </strong>Gerente de Marketing</p>
+          <p class="sob"><strong>Função: </strong>Desenvolvedor e Gerente Geral</p>
         </div>
         <div class="sobreD sobreD3">
           <p class="sob"><strong>Nome: </strong>Nicole dos Santos Quadros</p>

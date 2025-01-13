@@ -42,7 +42,7 @@ function adicionarRecursoParaUsuariosLogados()
         </div>
 
         <div class='campo'>
-            <label for 'email'>Novo Email:</label>
+            <label for='email'>Novo Email:</label>
             <input type='email' id='email' name='novo_email' required>
         </div>
 
@@ -111,4 +111,5 @@ function adicionarRecursoParaUsuariosLogados()
         header('Location: ../html/ec-login.php');
         exit;
     }
-}
+} 
+?>
