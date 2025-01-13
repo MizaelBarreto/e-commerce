@@ -1,0 +1,124 @@
+/* Define color variables */
+:root {
+    --primary-bg-color: #14213D;
+    --secondary-bg-color: #FCA311;
+    --text-color: #818080;
+    --accent-color: #947441;
+}
+
+/* Reset default styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Container styles */
+.container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr;
+    grid-template-areas: "cabecalho"
+                          "menu";
+    width: auto;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Menu styles */
+.menu {
+    grid-area: menu;
+    border-radius: 5px;
+    flex-direction: column;
+    width: 100%;
+    max-width: 450px;
+    background-color: var(--primary-bg-color);
+    display: flex;
+    align-items: center;
+    font-size: 20px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-style: italic;
+    color: var(--text-color);
+    font-weight: bold;
+    transition: 1s;
+    padding: 20px;
+}
+
+/* Cadastro styles */
+.cadastro {
+    margin-top: 20px;
+    border-bottom: 2px solid var(--text-color);
+    margin-bottom: 40px;
+}
+
+/* Label styles */
+.em,
+.se,
+.Cse
+.nm
+.tel {
+    font-size: 20px;
+    margin: 10px 0;
+    text-align: center;
+}
+
+/* Input styles */
+.escrita {
+    width: 100%;
+    font-size: 15px;
+    background-color: var(--primary-bg-color);
+    border: none;
+    border-bottom: solid 2px var(--text-color);
+    color: var(--text-color);
+    margin-bottom: 20px;
+    padding: 10px;
+}
+
+/* Remove input focus outline */
+.escrita:focus {
+    outline: none;
+}
+
+/* Button styles */
+.bt {
+    font-size: 18px;
+    width: 100%;
+    max-width: 200px;
+    height: 50px;
+    background-color: var(--secondary-bg-color);
+    border: 3px solid var(--secondary-bg-color);
+    border-radius: 3px;
+    color: var(--text-color);
+    transition: 0.5s linear;
+    cursor: pointer;
+}
+
+/* Button active state styles */
+.bt:active {
+    border-bottom: 3px solid var(--accent-color);
+    border-right: 3px solid var(--accent-color);
+    background-color: var(--accent-color);
+}
+
+/* Baixo styles */
+.baixo {
+    margin-top: 6px;
+    font-size: 13px;
+    text-align: center;
+}
+
+/* Anchor styles */
+a {
+    text-decoration: none;
+    color: var(--text-color);
+}
+
+/* Media Query for smaller screens */
+@media (max-width: 768px) {
+    .menu {
+        width: 100%;
+        max-width: none;
+    }
+}
